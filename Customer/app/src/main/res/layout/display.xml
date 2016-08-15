@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+     <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" 
+        android:id="@+id/tableLayout1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_gravity="center"
+               android:layout_span="2"
+               android:text="Shopkeeper Details"
+               android:gravity="center"
+               android:textSize="20sp"
+               android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:text="Name: "
+               android:gravity="right"
+               android:textSize="18sp"
+               android:textAlignment="gravity" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="2"
+               android:gravity="center"
+               android:textSize="18sp"
+               android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dip">
+           <TextView
+      		android:text="Phone Number: "
+      		android:gravity="right"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:textSize="18sp"
+      		android:layout_column="1" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="2"
+               android:textSize="18sp"
+               android:gravity="center"
+               android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dip">
+           <TextView
+      		android:text="Balance In Account: "
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:gravity="right"
+      		android:textSize="18sp"
+      		android:layout_column="1" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="2"
+               android:gravity="center"
+               android:textSize="18sp"
+               android:text="" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dip">
+           <TextView
+      		android:text="Address: "
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+			android:gravity="right"
+			android:textSize="18sp"
+      		android:layout_column="1" />
+           <TextView
+      		android:text=""
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+      		android:layout_column="2" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dip">
+           <TextView
+      		android:text="Time: "
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="18sp"
+      		android:layout_column="1" />
+           <TextView
+      		android:text=""
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:gravity="center"
+      		android:textSize="18sp"
+      		android:layout_column="2" />
+        </TableRow>
+     
+    </TableLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/DisplayField"
+      		android:text="Enter the Bill Amount: "
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:padding="10dip"
+      		android:textSize="18sp"
+      		android:gravity="center"/>
+     
+
+     <EditText
+         android:id="@+id/editText1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="number"
+         android:layout_gravity="center" >
+
+         <requestFocus />
+     </EditText>
+</LinearLayout>
+
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:textColor="#FFFFFF"
+		 android:textSize="20sp"
+         android:background="@drawable/buttonshape"
+         android:text="Transact" />
+
+</LinearLayout>
